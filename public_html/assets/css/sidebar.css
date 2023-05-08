@@ -1,0 +1,65 @@
+@import url(style.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--texto);
+}
+
+.sidebar{
+    z-index: 1001;
+    width: 80px;
+    background: var(--sidebar);
+    transition: all 0.5s;
+}
+span.text{
+    margin-left: 20px;
+    width:400px;
+    position:absolute;
+    display: none;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body.dark #img.form-control{
+    background-color: var(--body-dark);
+}
+@keyframes desaparecer {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.sidebar.fechar .text{
+    padding-left: 10px;
+    animation: aparecer 1s;
+    display: block;
+}
+.sidebar.fechar{
+    width: 22vh;
+}
+.sidebar a{
+    height: 60px;
+}
+
+.sidebar .menu-bar{
+    height: calc(100vh - 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body.dark{
+    background: var(--body-dark);
+}
+body.dark .sidebar{
+    background: var(--dark-sidebar);
+}

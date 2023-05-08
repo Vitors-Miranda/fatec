@@ -1,0 +1,19 @@
+:root{
+    /* ==== Cores ====*/
+    --body-color: #e4e9f7;
+    --sidebar:rgb(44, 43, 43);
+    --sidebar-logo:rgb(36, 34, 34);
+    --body-dark: rgb(52, 52, 53);
+    --primaria: #8c0303;
+    --primaria-clara: #f6f5ff;
+    --texto: #707070;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+}
+
+body.dark{
+    background: var(--body-dark);
+}

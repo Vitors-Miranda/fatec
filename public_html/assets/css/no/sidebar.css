@@ -1,0 +1,213 @@
+@import url(style.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--texto);
+    /*border: 1mm solid red;*/
+}
+
+.sidebar .image-text img{
+    width: 4rem;
+    margin-left: -0.5rem;
+    border-radius: 5px;
+}
+
+.sidebar header{
+    display: flex;
+    align-items: center;
+    font-size: 6vh;
+    font-weight: 500;
+    position: relative;
+    background: var(--sidebar-logo);
+    padding: 0.5rem;
+}
+
+
+
+
+.sidebar .image{
+    min-width: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .text.header-text{
+    margin-left: 2vh;
+    cursor: default;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 34vh;
+    background: var(--sidebar);
+    padding: 0%;
+}
+
+.sidebar.fechar{
+    width: 12vh;
+}
+
+.sidebar.fechar .text{
+    opacity: 0;
+}
+
+.sidebar.fechar .icon{
+    margin-left: -0.8rem;
+}
+
+
+.sidebar header .toggle{
+    position: absolute;
+    top:50%;
+    right: -2vh;
+    transform: translateY(-50%);
+    height: 4vh;
+    width: 4vh;
+    background: var(--primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar);
+    font-size: 3.5vh;
+}
+
+.sidebar li{
+    height: 5vh;
+    margin-top: 6vh;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    font-size: 4.8vh;
+}
+
+.bottom-content{
+    margin-left: 6vh;
+}
+
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--texto);
+
+}
+
+.sidebar li #disciplinas{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.sidebar li .text{
+    margin-left: 48%;
+}
+
+.sidebar .nav-link:hover{
+    border-right: 1vh solid var(--primaria);
+}
+
+#switchLetter{
+    margin-left: 20%;
+    cursor: default;
+}
+
+.sidebar li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.sidebar .menu-bar{
+    height: calc(100% - 14vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .mode i{
+    position: absolute;
+}
+
+.menu-bar .mode .sol-lua{
+    height: 5vh;
+    width: 5.2vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar.fechar .sol-lua{
+    opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+
+body.dark .menu-bar .mode i.moon{
+    opacity: 0;
+}
+
+.menu-bar .mode i.sun{
+    opacity: 0;
+}
+.menu-bar .mode .toggle-switch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 5vh;
+    margin-right: 5%;
+}
+
+.sidebar.fechar .menu-bar .mode .toggle-switch{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 5vh;
+    margin-left: -25%;
+}
+
+.toggle-switch .switch{
+    position: relative;
+    height: 3vh;
+    width: 6vh;
+    border-radius: 3vh;
+    background: var(--texto);
+}
+
+.toggle-switch{
+    cursor: pointer;
+}
+
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 0.8rem;
+    width: 0.8rem;
+    background: var(--sidebar);
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+body.dark .switch::before{
+    left: 17px;
+}
+
+body.dark{
+    background: var(--body-dark);
+}

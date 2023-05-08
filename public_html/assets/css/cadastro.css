@@ -1,0 +1,80 @@
+
+#btnProcurar{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: var(--body-dark);
+    font-size: 1rem;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 55px;
+    right:  120px;
+}
+
+body.dark #btnProcurar{
+    background: white;
+}
+body.dark #bodyModal .modal-header, .modal-footer{
+    border-color: var(--texto);
+}
+body.dark #bodyModal{
+    background:  var(--body-dark);
+    color: white;
+}
+
+body.dark .form-floating:before, body.dark .form-control {
+    background:  var(--body-dark) !important;
+    color: white;
+    border-color: var(--texto);
+}
+body.dark .input-group-text{
+    color: white;
+}
+body.dark .form-select{
+    background:  var(--body-dark) !important;
+    color: white;
+    border-color: var(--texto);
+    font-size: 0.8rem;
+}
+
+body.dark .input-group-text{
+    background-color:  var(--body-dark);
+    border-color: var(--texto);
+}
+#btnProcurar i{
+    color: white;
+}
+#btnProcurar{
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+#btnProcurar:active{
+    width: 200px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+body.dark  #btnProcurar i{
+    color: var(--secundaria);
+}
+
+#btnCadastrar{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: var(--secundaria);
+    font-size: 2rem;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 50px;
+    right:  50px;
+}
+#btnCadastrar:hover{
+    background: var(--primaria);
+}
+
+#btnCadastrar i{
+    color: white;
+}

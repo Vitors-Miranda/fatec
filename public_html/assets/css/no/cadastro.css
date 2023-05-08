@@ -1,0 +1,86 @@
+/*.sidebar.fechar .main{
+    margin-left: 10rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 200vh;
+    height: 80vh;
+    border: 2px solid var(--primaria);
+    display: flex;
+    position:absolute;
+    border-radius: 20%;
+}
+*/
+.main{
+    margin-left: 20rem;
+    margin-top: 10vh;
+    width: 140vh;
+    height: 80vh;
+    border: 2px solid var(--primaria);
+    border-radius: 5%;
+}
+
+body.dark .main{
+    margin-left: 20rem;
+    margin-top: 10vh;
+    width: 140vh;
+    height: 80vh;
+    border: 2px solid var(--primaria);
+    border-radius: 5%;
+    background: var(--body-color);
+}
+
+/*.sidebar.fechar .main .main-text h1{
+    padding-left: 30vh;
+    padding-right: 30vh;
+    margin-left: 20vh;
+    border-bottom: 3px solid var(--primaria);
+    height: 10vh;
+}*/
+
+.main .main-text h1{
+    padding-left: 40vh;
+    border-bottom: 3px solid var(--primaria);
+    height: 10vh;
+}
+
+.row-in-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.row-in-form.end{
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 5vh;
+}
+.button button{
+    border: 2px solid var(--primaria);
+    border-radius: 20%;
+    padding-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 3rem;
+    background: var(--primaria-clara);
+}
+
+.row-in-form.edital{
+    margin-top: 4rem;
+}
+
+.button.edital{
+    margin-top: 6rem;
+}
+
+.button button:hover{
+    background: var(--primaria);
+    color: var(--primaria-clara);
+}

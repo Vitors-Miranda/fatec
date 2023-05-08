@@ -1,0 +1,92 @@
+@import url(style.css);
+
+
+.navbar .navbar-brand img{
+    width: 3rem;
+    height: 3rem;
+}
+.navbar .navbar-brand{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    background: var(--sidebar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .navbar-brand .text-navbar.red{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primaria);
+    cursor: default;
+}
+
+.navbar .navbar-brand .text-navbar.text{
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.navbar .navbar.body .navbar-item{
+    display:flex;
+    align-items:center;
+}
+
+.navbar .navbar.body{
+    padding-bottom: 0;
+    display: flex;
+
+}
+.navbar .navbar.body .navbar-item li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 3rem;
+   
+}
+
+.navbar .navbar.body .navbar-item li a{
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--texto);
+}
+
+.main{
+    width: 80%;
+    height: 20rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .main .card{
+    margin-top: -8rem;
+    margin-left: -6rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    width: 15rem;
+    height: 15rem;
+
+}
+
+.main .main .card .card-text{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    min-width: 5rem;
+    min-height: 5rem;
+}

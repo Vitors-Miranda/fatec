@@ -1,0 +1,12 @@
+{
+    "name": "emagoediv/comeat",
+    "description": "tcc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        },
+    "files": [
+        "Config/config.php"
+        ]
+    }
+}
